@@ -274,6 +274,9 @@
             size=nf;
             decrypter_rom_encrypt(ddpdoj_key);
             break;
+        case 45:
+            pgm_hack_ytzy(pus,nf);
+            break;
 
         default:
             [self showWaringMessage:@"请选择游戏名称!" isOpen:false];

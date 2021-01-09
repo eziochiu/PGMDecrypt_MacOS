@@ -199,7 +199,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-Vv-xgM">
-                                <rect key="frame" x="515" y="166" width="62" height="32"/>
+                                <rect key="frame" x="516" y="166" width="61" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="hcG-On-SCm"/>
                                 </constraints>
@@ -272,7 +272,7 @@
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-5P-qfO">
-                                <rect key="frame" x="515" y="116" width="62" height="32"/>
+                                <rect key="frame" x="516" y="116" width="61" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="My8-bB-jaA"/>
                                 </constraints>
@@ -336,6 +336,7 @@
                                         <string>PGM2-加密-三国战记3[kov3]</string>
                                         <string>PGM2-加密-三国战记2盖世英雄[kov2nl]</string>
                                         <string>PGM2-加密-ddpdoj[ddpdo]</string>
+                                        <string>YTZYHACK字节反转</string>
                                     </objectValues>
                                 </comboBoxCell>
                                 <connections>
@@ -359,7 +360,7 @@
                                     <constraint firstAttribute="height" constant="16" id="QqI-QN-mvr"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="文件名称：" id="9y8-9h-o2V">
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
