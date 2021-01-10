@@ -277,6 +277,9 @@
         case 45:
             pgm_hack_ytzy(pus,nf);
             break;
+        case 46:
+            pgm_hack_ytzy1(pus,nf);
+            break;
 
         default:
             [self showWaringMessage:@"请选择游戏名称!" isOpen:false];

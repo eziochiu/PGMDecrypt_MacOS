@@ -45,15 +45,6 @@ if ((i & 0x004820) == 0x004820) x ^= 0x0080;
 #define IGS27_CRYPT8_ALT \
 	if ((i & 0x000820) == 0x000820) x ^= 0x0080;
 
-void pgm_hack_ytzy(UINT16 *src,int rom_size)
-{
-    for (int i = 0; i < rom_size/2; i++) {
-        UINT16 x = src[i];
-        x = (src[i] >>8)|(src[i]<<8);
-        src[i] = x;
-    }
-}
-
 static const UINT8 kov_tab[256] = {
 	0x17, 0x1c, 0xe3, 0x02, 0x62, 0x59, 0x97, 0x4a, 0x67, 0x4d, 0x1f, 0x11, 0x76, 0x64, 0xc1, 0xe1,
 	0xd2, 0x41, 0x9f, 0xfd, 0xfa, 0x04, 0xfe, 0xab, 0x89, 0xeb, 0xc0, 0xf5, 0xac, 0x2b, 0x64, 0x22,
@@ -564,12 +555,12 @@ static const UINT8 oldsplus_tab[256] = {
 void pgm_decrypt_oldsplus(UINT16 *src,int rom_size)
 {
 	int i;
-	//unsigned short *src = (unsigned short *)(machine.root_device(UINT16 *src,int rom_size).memregion("maincpu")->base(UINT16 *src,int rom_size)+0x100000);
+	//UINT16 *src = (UINT16 *)(machine.root_device(UINT16 *src,int rom_size).memregion("maincpu")->base(UINT16 *src,int rom_size)+0x100000);
 
 	//int rom_size = 0x400000;
 
 	for(i=0; i<rom_size/2; i++) {
-		unsigned short x = src[i];
+		UINT16 x = src[i];
 
 		IGS27_CRYPT1
 		IGS27_CRYPT2_ALT
@@ -609,12 +600,12 @@ static const UINT8 kovshp_tab[256] = {
 void pgm_decrypt_kovshp(UINT16 *src,int rom_size)
 {
 	int i;
-	//unsigned short *src = (unsigned short *)(machine.root_device(UINT16 *src,int rom_size).memregion("maincpu")->base(UINT16 *src,int rom_size)+0x100000);
+	//UINT16 *src = (UINT16 *)(machine.root_device(UINT16 *src,int rom_size).memregion("maincpu")->base(UINT16 *src,int rom_size)+0x100000);
 
 	//int rom_size = 0x400000;
 
 	for(i=0; i<rom_size/2; i++) {
-		unsigned short x = src[i];
+		UINT16 x = src[i];
 
 		IGS27_CRYPT1_ALT
 		IGS27_CRYPT2_ALT2
@@ -629,6 +620,28 @@ void pgm_decrypt_kovshp(UINT16 *src,int rom_size)
 
 		src[i] = x;
 	}
+}
+
+void pgm_hack_ytzy1(UINT16 *src,int rom_size)
+{
+    for (int i = 0; i < rom_size/2; i++) {
+        UINT16 x = src[i];
+        x = (src[i] >>8)|(src[i]<<8);
+        src[i] = x;
+    }
+    
+    pgm_decrypt_kovshp(src, rom_size);
+}
+
+void pgm_hack_ytzy(UINT16 *src,int rom_size)
+{
+    pgm_decrypt_kovshp(src, rom_size);
+    
+    for (int i = 0; i < rom_size/2; i++) {
+        UINT16 x = src[i];
+        x = (src[i] >>8)|(src[i]<<8);
+        src[i] = x;
+    }
 }
 
 

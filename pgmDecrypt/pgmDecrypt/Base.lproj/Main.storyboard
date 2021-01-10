@@ -199,7 +199,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-Vv-xgM">
-                                <rect key="frame" x="516" y="166" width="61" height="32"/>
+                                <rect key="frame" x="515" y="166" width="62" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="hcG-On-SCm"/>
                                 </constraints>
@@ -272,7 +272,7 @@
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-5P-qfO">
-                                <rect key="frame" x="516" y="116" width="61" height="32"/>
+                                <rect key="frame" x="515" y="116" width="62" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="My8-bB-jaA"/>
                                 </constraints>
@@ -336,7 +336,8 @@
                                         <string>PGM2-加密-三国战记3[kov3]</string>
                                         <string>PGM2-加密-三国战记2盖世英雄[kov2nl]</string>
                                         <string>PGM2-加密-ddpdoj[ddpdo]</string>
-                                        <string>YTZYHACK字节反转</string>
+                                        <string>解密并16进制高低位反转</string>
+                                        <string>16进制高低位反转并加密</string>
                                     </objectValues>
                                 </comboBoxCell>
                                 <connections>
