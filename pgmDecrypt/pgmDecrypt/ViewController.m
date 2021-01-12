@@ -11,6 +11,10 @@
 #include "Header.h"
 #import "DragDropView.h"
 
+#define defaultDir [[NSUserDefaults standardUserDefaults] valueForKey:@"defaultDir"]
+
+#define autoOpen [[NSUserDefaults standardUserDefaults] boolForKey:@"autoOpen"]
+
 @interface ViewController () <DragDropViewDelegate>
 @property (weak) IBOutlet NSComboBox *comboBox;
 @property(nonatomic, assign) NSInteger selectIndex;
@@ -83,7 +87,9 @@
         hg = 0;
         free(hg);
     }
-    [[NSWorkspace sharedWorkspace] openFile:self.filePathUrl.path];
+    if (autoOpen) {
+        [[NSWorkspace sharedWorkspace] openFile:([defaultDir length] ? defaultDir : self.filePathUrl.path)];
+    }
 }
 - (IBAction)encryptAction:(NSButton *)sender {
     if (self.selectIndex == -1) {
@@ -106,7 +112,9 @@
         hg = 0;
         free(hg);
     }
-    [[NSWorkspace sharedWorkspace] openFile:self.filePathUrl.path];
+    if (autoOpen) {
+        [[NSWorkspace sharedWorkspace] openFile:([defaultDir length] ? defaultDir : self.filePathUrl.path)];
+    }
 }
 
 - (void)decryptFile:(UINT16 *)pus fileLength:(int)nf isDecrypt:(BOOL)isDecrypt {
@@ -296,7 +304,7 @@
             outputFileName = [@"en_" stringByAppendingFormat:@"%@", self.fileName];
         }
     }
-    NSString *outputPath = [self.filePathUrl.path stringByAppendingPathComponent:outputFileName];
+    NSString *outputPath = [defaultDir length] ? [defaultDir stringByAppendingPathComponent:outputFileName] : [self.filePathUrl.path stringByAppendingPathComponent:outputFileName];
     FILE *output = fopen([outputPath UTF8String], "wb");
     if (output == NULL) {
         [self showWaringMessage:@"无法创建解密的pgm的PROM文件!" isOpen:false];

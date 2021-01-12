@@ -23,7 +23,11 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <segue destination="SNi-8K-10K" kind="show" id="ctP-Dk-1Yn"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -175,7 +179,114 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="84" y="298"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="Gwa-t8-Lh2">
+            <objects>
+                <windowController id="SNi-8K-10K" sceneMemberID="viewController">
+                    <window key="window" title="设置" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="uvf-d0-hp2">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="-1626" y="313" width="580" height="120"/>
+                        <rect key="screenRect" x="-1920" y="0.0" width="1920" height="1055"/>
+                        <value key="minSize" type="size" width="580" height="120"/>
+                        <view key="contentView" id="nkd-iU-pW3">
+                            <rect key="frame" x="0.0" y="0.0" width="580" height="120"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="SNi-8K-10K" id="mpe-mO-ozB"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="ert-yZ-LgQ" kind="relationship" relationship="window.shadowedContentViewController" id="koe-x9-q3i"/>
+                    </connections>
+                </windowController>
+                <customObject id="vSi-JL-B3O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="7"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="ZE9-v7-y4Y">
+            <objects>
+                <viewController title="设置" id="ert-yZ-LgQ" customClass="PreferenceViewController" sceneMemberID="viewController">
+                    <view key="view" id="eFM-sv-x9I">
+                        <rect key="frame" x="0.0" y="0.0" width="580" height="120"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wDg-8Q-ZuP">
+                                <rect key="frame" x="18" y="74" width="107" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="默认保存文件夹：" id="rOz-FQ-7g5">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UyY-Q0-TUl">
+                                <rect key="frame" x="18" y="27" width="146" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="jUF-Jd-Cg1"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="自动打开解密文件夹" bezelStyle="regularSquare" imagePosition="left" inset="2" id="9fa-Tk-Phv">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="autoOpen:" target="ert-yZ-LgQ" id="2k9-xl-YZn"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HXd-4c-RhQ">
+                                <rect key="frame" x="133" y="74" width="311" height="16"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="Sdw-7s-Gdf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Un-6c-4pn">
+                                <rect key="frame" x="447" y="65" width="62" height="32"/>
+                                <buttonCell key="cell" type="push" title="设置" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="MOk-Uz-UCS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setDir:" target="ert-yZ-LgQ" id="sC6-lt-vPw"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z8c-nN-Osb">
+                                <rect key="frame" x="505" y="65" width="62" height="32"/>
+                                <buttonCell key="cell" type="push" title="清除" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="SAs-b5-kzf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clearPath:" target="ert-yZ-LgQ" id="e0n-1h-AaE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UyY-Q0-TUl" firstAttribute="leading" secondItem="wDg-8Q-ZuP" secondAttribute="leading" id="BOa-hE-iG7"/>
+                            <constraint firstItem="6Un-6c-4pn" firstAttribute="leading" secondItem="HXd-4c-RhQ" secondAttribute="trailing" constant="10" id="Dmz-qv-DOS"/>
+                            <constraint firstItem="wDg-8Q-ZuP" firstAttribute="leading" secondItem="eFM-sv-x9I" secondAttribute="leading" constant="20" id="Kbi-My-vr6"/>
+                            <constraint firstItem="HXd-4c-RhQ" firstAttribute="centerY" secondItem="wDg-8Q-ZuP" secondAttribute="centerY" id="M9m-KD-EW1"/>
+                            <constraint firstItem="6Un-6c-4pn" firstAttribute="centerY" secondItem="wDg-8Q-ZuP" secondAttribute="centerY" id="O7R-JS-zni"/>
+                            <constraint firstAttribute="trailing" secondItem="Z8c-nN-Osb" secondAttribute="trailing" constant="20" id="Qbh-SH-ZDQ"/>
+                            <constraint firstItem="Z8c-nN-Osb" firstAttribute="centerY" secondItem="wDg-8Q-ZuP" secondAttribute="centerY" id="UyY-MC-aHL"/>
+                            <constraint firstItem="wDg-8Q-ZuP" firstAttribute="top" secondItem="eFM-sv-x9I" secondAttribute="top" constant="30" id="WkQ-JS-2Eg"/>
+                            <constraint firstItem="UyY-Q0-TUl" firstAttribute="top" secondItem="wDg-8Q-ZuP" secondAttribute="bottom" constant="30" id="jDb-aI-YIk"/>
+                            <constraint firstItem="HXd-4c-RhQ" firstAttribute="leading" secondItem="wDg-8Q-ZuP" secondAttribute="trailing" constant="10" id="n6A-PH-aKd"/>
+                            <constraint firstItem="Z8c-nN-Osb" firstAttribute="leading" secondItem="6Un-6c-4pn" secondAttribute="trailing" constant="10" id="oGw-hF-eFz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="autoOpen" destination="UyY-Q0-TUl" id="W0D-hT-1FJ"/>
+                        <outlet property="defaultDirField" destination="HXd-4c-RhQ" id="g3w-0c-gHv"/>
+                    </connections>
+                </viewController>
+                <customObject id="TZQ-Gz-hKA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="0.0"/>
         </scene>
         <!--PGM加解密工具-->
         <scene sceneID="hIz-AP-VOD">
@@ -400,7 +511,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="631.5"/>
+            <point key="canvasLocation" x="84" y="661"/>
         </scene>
     </scenes>
 </document>

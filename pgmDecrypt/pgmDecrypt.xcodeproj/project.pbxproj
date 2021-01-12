@@ -13,6 +13,7 @@
 		843BA60925A699C300CA4A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BA60725A699C300CA4A57 /* Main.storyboard */; };
 		843BA60C25A699C300CA4A57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BA60B25A699C300CA4A57 /* main.m */; };
 		843BA62E25A6D5EE00CA4A57 /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BA62D25A6D5EE00CA4A57 /* DragDropView.m */; };
+		84575F8B25AD46FD00ADF42D /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84575F8A25AD46FD00ADF42D /* PreferenceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		843BA62425A6B81F00CA4A57 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		843BA62C25A6D5EE00CA4A57 /* DragDropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
 		843BA62D25A6D5EE00CA4A57 /* DragDropView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
+		84575F8925AD46FD00ADF42D /* PreferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceViewController.h; sourceTree = "<group>"; };
+		84575F8A25AD46FD00ADF42D /* PreferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				843BA60025A699C200CA4A57 /* AppDelegate.m */,
 				843BA60225A699C200CA4A57 /* ViewController.h */,
 				843BA60325A699C200CA4A57 /* ViewController.m */,
+				84575F8925AD46FD00ADF42D /* PreferenceViewController.h */,
+				84575F8A25AD46FD00ADF42D /* PreferenceViewController.m */,
 				843BA60525A699C300CA4A57 /* Assets.xcassets */,
 				843BA60725A699C300CA4A57 /* Main.storyboard */,
 				843BA60A25A699C300CA4A57 /* Info.plist */,
@@ -168,6 +173,7 @@
 				843BA60425A699C200CA4A57 /* ViewController.m in Sources */,
 				843BA60C25A699C300CA4A57 /* main.m in Sources */,
 				843BA60125A699C200CA4A57 /* AppDelegate.m in Sources */,
+				84575F8B25AD46FD00ADF42D /* PreferenceViewController.m in Sources */,
 				843BA62E25A6D5EE00CA4A57 /* DragDropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
