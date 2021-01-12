@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "843BA5FB25A699C200CA4A57"
-               BuildableName = "pgmDecrypt.app"
-               BlueprintName = "pgmDecrypt"
+               BuildableName = "PGMDecrypt.app"
+               BlueprintName = "PGMDecrypt"
                ReferencedContainer = "container:pgmDecrypt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "843BA5FB25A699C200CA4A57"
-            BuildableName = "pgmDecrypt.app"
-            BlueprintName = "pgmDecrypt"
+            BuildableName = "PGMDecrypt.app"
+            BlueprintName = "PGMDecrypt"
             ReferencedContainer = "container:pgmDecrypt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "843BA5FB25A699C200CA4A57"
-            BuildableName = "pgmDecrypt.app"
-            BlueprintName = "pgmDecrypt"
+            BuildableName = "PGMDecrypt.app"
+            BlueprintName = "PGMDecrypt"
             ReferencedContainer = "container:pgmDecrypt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

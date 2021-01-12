@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		843BA5FC25A699C200CA4A57 /* pgmDecrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pgmDecrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		843BA5FC25A699C200CA4A57 /* PGMDecrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGMDecrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BA5FF25A699C200CA4A57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		843BA60025A699C200CA4A57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		843BA60225A699C200CA4A57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		843BA5FD25A699C200CA4A57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				843BA5FC25A699C200CA4A57 /* pgmDecrypt.app */,
+				843BA5FC25A699C200CA4A57 /* PGMDecrypt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		843BA5FB25A699C200CA4A57 /* pgmDecrypt */ = {
+		843BA5FB25A699C200CA4A57 /* PGMDecrypt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843BA61025A699C300CA4A57 /* Build configuration list for PBXNativeTarget "pgmDecrypt" */;
+			buildConfigurationList = 843BA61025A699C300CA4A57 /* Build configuration list for PBXNativeTarget "PGMDecrypt" */;
 			buildPhases = (
 				843BA5F825A699C200CA4A57 /* Sources */,
 				843BA5F925A699C200CA4A57 /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = pgmDecrypt;
+			name = PGMDecrypt;
 			productName = pgmDecrypt;
-			productReference = 843BA5FC25A699C200CA4A57 /* pgmDecrypt.app */;
+			productReference = 843BA5FC25A699C200CA4A57 /* PGMDecrypt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				843BA5FB25A699C200CA4A57 /* pgmDecrypt */,
+				843BA5FB25A699C200CA4A57 /* PGMDecrypt */,
 			);
 		};
 /* End PBXProject section */
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843BA61025A699C300CA4A57 /* Build configuration list for PBXNativeTarget "pgmDecrypt" */ = {
+		843BA61025A699C300CA4A57 /* Build configuration list for PBXNativeTarget "PGMDecrypt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843BA61125A699C300CA4A57 /* Debug */,
