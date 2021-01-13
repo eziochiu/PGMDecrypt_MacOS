@@ -447,8 +447,10 @@
                                         <string>PGM2-加密-三国战记3[kov3]</string>
                                         <string>PGM2-加密-三国战记2盖世英雄[kov2nl]</string>
                                         <string>PGM2-加密-ddpdoj[ddpdo]</string>
-                                        <string>解密并16进制高低位反转</string>
-                                        <string>16进制高低位反转并加密</string>
+                                        <string>PGM1-一统中原反汇编解密</string>
+                                        <string>PGM1-一统中原反汇编加密</string>
+                                        <string>PGM1-119反汇编解密</string>
+                                        <string>PGM1-119反汇编加密</string>
                                     </objectValues>
                                 </comboBoxCell>
                                 <connections>
