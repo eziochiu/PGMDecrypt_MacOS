@@ -622,7 +622,7 @@ void pgm_decrypt_kovshp(UINT16 *src,int rom_size)
 	}
 }
 
-void pgm_hack_kov(UINT16 *src,int rom_size)
+void pgm_hack_kov1(UINT16 *src,int rom_size)
 {
     for (int i = 0; i < rom_size/2; i++) {
         UINT16 x = src[i];
@@ -633,7 +633,7 @@ void pgm_hack_kov(UINT16 *src,int rom_size)
     pgm_decrypt_kov(src, rom_size);
 }
 
-void pgm_hack_kov1(UINT16 *src,int rom_size)
+void pgm_hack_kov(UINT16 *src,int rom_size)
 {
     pgm_decrypt_kov(src, rom_size);
     
