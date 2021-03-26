@@ -451,6 +451,8 @@
                                         <string>PGM1-一统中原反汇编加密</string>
                                         <string>PGM1-119反汇编解密</string>
                                         <string>PGM1-119反汇编加密</string>
+                                        <string>PGM1-风云再起反汇编解密</string>
+                                        <string>PGM1-风云再起反汇编加密</string>
                                     </objectValues>
                                 </comboBoxCell>
                                 <connections>
