@@ -622,6 +622,15 @@ void pgm_decrypt_kovshp(UINT16 *src,int rom_size)
 	}
 }
 
+void pgm_hack_pgms(UINT16 *src,int rom_size)
+{
+    for (int i = 0; i < rom_size/2; i++) {
+        UINT16 x = src[i];
+        x = (src[i] >>8)|(src[i]<<8);
+        src[i] = x;
+    }
+}
+
 void pgm_hack_kovsh1(UINT16 *src,int rom_size)
 {
     for (int i = 0; i < rom_size/2; i++) {

@@ -237,7 +237,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HXd-4c-RhQ">
-                                <rect key="frame" x="133" y="74" width="311" height="16"/>
+                                <rect key="frame" x="133" y="74" width="313" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="Sdw-7s-Gdf">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -245,7 +245,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Un-6c-4pn">
-                                <rect key="frame" x="447" y="65" width="62" height="32"/>
+                                <rect key="frame" x="449" y="65" width="61" height="32"/>
                                 <buttonCell key="cell" type="push" title="设置" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="MOk-Uz-UCS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -255,7 +255,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z8c-nN-Osb">
-                                <rect key="frame" x="505" y="65" width="62" height="32"/>
+                                <rect key="frame" x="506" y="65" width="61" height="32"/>
                                 <buttonCell key="cell" type="push" title="清除" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="SAs-b5-kzf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -310,7 +310,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-Vv-xgM">
-                                <rect key="frame" x="515" y="166" width="62" height="32"/>
+                                <rect key="frame" x="516" y="166" width="61" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="hcG-On-SCm"/>
                                 </constraints>
@@ -383,7 +383,7 @@
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-5P-qfO">
-                                <rect key="frame" x="515" y="116" width="62" height="32"/>
+                                <rect key="frame" x="516" y="116" width="61" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="My8-bB-jaA"/>
                                 </constraints>
@@ -453,6 +453,7 @@
                                         <string>PGM1-119反汇编加密</string>
                                         <string>PGM1-风云再起反汇编解密</string>
                                         <string>PGM1-风云再起反汇编加密</string>
+                                        <string>大小端字节反转</string>
                                     </objectValues>
                                 </comboBoxCell>
                                 <connections>

@@ -300,6 +300,9 @@
         case 50:
             pgm_hack_kovsh1(pus,nf);
             break;
+        case 51:
+            pgm_hack_pgms(pus,nf);
+            break;
 
         default:
             [self showWaringMessage:@"请选择游戏名称!" isOpen:false];
